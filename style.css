@@ -1,0 +1,156 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+
+.nav {
+    padding-top: 1%;
+    color: black;
+    text-align: center;
+    width: 100vw;
+    height: 9vh;
+    color: white;
+    font-family: 'Courgette', cursive;
+    letter-spacing: .1cm;
+    font-size: 1.2rem;
+}
+
+.main {
+    height: 87vh;
+    width: 86vw;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 54%;
+    left: 50%;
+    border-radius: 20px;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+
+}
+
+.main::after {
+    content: "";
+    height: 300%;
+    width: 150%;
+    position: absolute;
+    z-index: -1;
+    background: conic-gradient(#fd004c,
+            #fe9000,
+            #fff020,
+            #3edf4b,
+            #3363ff,
+            #b102b7,
+            #fd004c);
+    left: -25%;
+    top: -100%;
+    animation: spin 1.5s infinite linear;
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+
+.panel {
+    position: absolute;
+    z-index: 1;
+    background-color: transparent;
+    width: 97%;
+    height: 96%;
+    margin-left: 1.5%;
+    margin-top: 1%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.top {
+    width: 100%;
+    height: 15%;
+    background-color: black;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20%;
+
+
+}
+
+.hts {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
+    color: #ACA1FF;
+    letter-spacing: .1cm;
+
+}
+
+.box {
+    width: 4vw;
+    height: 6vh;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ACA1FF;
+    border-radius: 5px;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.box:hover{
+    background-color: lightblue;
+    width: 4.5vw;
+    height: 6.5vh;
+    font-size: 2.2rem;
+    font-weight: 600;
+}
+
+.btm {
+    width: 100%;
+    height: 85%;
+    background-color: white;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    cursor: pointer;
+}
+
+.btn {
+    width: 5%;
+    height: 12%;
+    margin-top: .5%;
+    margin-left: .5%;
+    background: linear-gradient(to right,#A26FF8, #ACA1FF, #6CBDFA, #ACA1FF, #A26FF8);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 2rem;
+    font-weight: 600;
+}
+.btn:hover{
+    width: 5.5%;
+    height: 13%;
+    font-size: 2rem;
+    background: linear-gradient(to right,blue, violet, blue);
+
+
+}
